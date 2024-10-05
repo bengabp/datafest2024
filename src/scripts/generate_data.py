@@ -8,7 +8,7 @@ import random
 import json
 
 
-class StudentGenerator:
+class StudentManager:
 
     def __init__(self):
         self.names_file = os.path.join(BASE_DIR, "datasets", "ethnic_names.json")
@@ -45,7 +45,7 @@ class StudentGenerator:
 
         # Expand male and female first names into one list
         all_first_names = self.male_names + self.female_names
-        gender_labels = ['Male'] * len(self.male_names) + ['Female'] * len(self.female_names)
+        gender_labels = ['male'] * len(self.male_names) + ['female'] * len(self.female_names)
 
         # Shuffle the first names and gender labels to randomize assignment
         combined_first_names = list(zip(all_first_names, gender_labels))
@@ -68,8 +68,8 @@ class StudentGenerator:
                 break
             if last not in used_last_names:  # Ensure no repeated last names initially
                 unique_names.append({
-                    "firstname": first,
-                    "lastname": last,
+                    "first_name": first,
+                    "last_name": last,
                     "gender": gender
                 })
                 used_last_names.add(last)
@@ -80,12 +80,12 @@ class StudentGenerator:
             remaining_names = all_name_combinations[:remaining_count]  # Use repeated last names if necessary
             for (first, gender), last in remaining_names:
                 unique_names.append({
-                    "firstname": first,
-                    "lastname": last,
+                    "first_name": first,
+                    "last_name": last,
                     "gender": gender
                 })
         df = pd.DataFrame(unique_names)
-        df.to_csv(os.path.join(BASE_DIR, "datasets", "names.csv"), index=False)
+        df.to_csv(os.path.join(BASE_DIR, "datasets", "names.csv"), index=True, index_label="student_id")
         return df
 
     def load_students(self, file: str = os.path.join(BASE_DIR, "datasets", "names.csv")) -> pd.DataFrame:
@@ -93,6 +93,6 @@ class StudentGenerator:
 
 
 if __name__ == "__main__":
-    sg = StudentGenerator()
+    sg = StudentManager()
     data = sg.generate_unique_names_by_gender()
     print(data)
