@@ -3,6 +3,7 @@ from selectolax.parser import HTMLParser
 import itertools
 from src.settings import BASE_DIR
 import os
+from datetime import datetime
 import pandas as pd
 import random
 import json
@@ -21,6 +22,9 @@ class StudentManager:
 
         with open(os.path.join(BASE_DIR, "datasets", "female.txt")) as f:
             self.female_names = [line.strip() for line in f]
+
+        self.parent_first_names = self.female_names + self.male_names
+
 
     def scrape_ethnic_names(self):
         names = {}
@@ -70,7 +74,8 @@ class StudentManager:
                 unique_names.append({
                     "first_name": first,
                     "last_name": last,
-                    "gender": gender
+                    "gender": gender,
+                    "date_of_birth": self.generate_random_dob()
                 })
                 used_last_names.add(last)
 
@@ -82,17 +87,81 @@ class StudentManager:
                 unique_names.append({
                     "first_name": first,
                     "last_name": last,
-                    "gender": gender
+                    "gender": gender,
+                    "date_of_birth": self.generate_random_dob()
                 })
         df = pd.DataFrame(unique_names)
         df.to_csv(os.path.join(BASE_DIR, "datasets", "names.csv"), index=True, index_label="student_id")
         return df
 
+    def generate_random_dob(self, min_age=9, max_age=11):
+        """
+        Generates a random date of birth for a student, where the age is between `min_age` and `max_age`.
+        """
+        # Get the current year
+        current_year = datetime.now().year
+
+        # Calculate the range of birth years for the age range
+        min_birth_year = current_year - max_age
+        max_birth_year = current_year - min_age
+
+        # Generate a random birth year within the range
+        random_year = random.randint(min_birth_year, max_birth_year)
+
+        # Generate a random month and day, ensuring the date is valid
+        random_month = random.randint(1, 12)
+        random_day = random.randint(1, 28)  # To avoid issues with February and leap years
+
+        # Create the random date of birth
+        dob = datetime(random_year, random_month, random_day)
+
+        return dob.strftime('%Y-%m-%d')
+
     def load_students(self, file: str = os.path.join(BASE_DIR, "datasets", "names.csv")) -> pd.DataFrame:
         return pd.read_csv(file)
+
+    def generate_parents_for_students(self, csv_file_path: str = os.path.join(BASE_DIR, "datasets", "students_rows.csv")):
+        # Read the CSV file into a DataFrame
+        df = pd.read_csv(csv_file_path)
+
+        # Track used first names to minimize repetition
+        used_first_names = set()
+
+        # List to store generated parent names
+        parents = []
+        parent_ids = []
+
+        for ind, (_, row) in enumerate(df.iterrows()):
+            # Filter available names that haven’t been used yet
+            available_names = [name for name in self.parent_first_names if name not in used_first_names]
+
+            # If we've used all names, reset to allow repeats
+            if not available_names:
+                used_first_names.clear()
+                available_names = self.parent_first_names
+
+            # Pick a random name from available names and add to used names
+            parent_first_name = random.choice(available_names)
+            used_first_names.add(parent_first_name)
+
+            # Use the student’s last name for the parent
+            parent_last_name = row['last_name']
+
+            # Append parent data to the list
+            parents.append({
+                "first_name": parent_first_name,
+                "last_name": parent_last_name,
+                "parent_id": ind
+            })
+            parent_ids.append(ind)
+
+        # Add generated parents to the DataFrame
+        df['parent_id'] = parent_ids
+        df.to_csv("datasets/students_p_rows.csv", index=None)
+        pd.DataFrame(parents).to_csv("datasets/parents.csv", index=None)
 
 
 if __name__ == "__main__":
     sg = StudentManager()
-    data = sg.generate_unique_names_by_gender()
-    print(data)
+    # sg.generate_parents_for_students()
+
