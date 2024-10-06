@@ -9,7 +9,7 @@ import random
 import json
 
 
-class StudentManager:
+class DatasetManager:
 
     def __init__(self):
         self.names_file = os.path.join(BASE_DIR, "datasets", "ethnic_names.json")
@@ -24,7 +24,6 @@ class StudentManager:
             self.female_names = [line.strip() for line in f]
 
         self.parent_first_names = self.female_names + self.male_names
-
 
     def scrape_ethnic_names(self):
         names = {}
@@ -160,8 +159,56 @@ class StudentManager:
         df.to_csv("datasets/students_p_rows.csv", index=None)
         pd.DataFrame(parents).to_csv("datasets/parents.csv", index=None)
 
+    def generate_teachers(self, num_names=10) -> pd.DataFrame:
+
+        # Combine all last names from the JSON data
+        all_last_names = self.names_data["igbo"] + self.names_data["hausa"] + self.names_data["yoruba"]
+
+        # Expand male and female first names into one list
+        all_first_names = self.male_names + self.female_names
+        gender_labels = ['male'] * len(self.male_names) + ['female'] * len(self.female_names)
+
+        # Shuffle the first names and gender labels to randomize assignment
+        combined_first_names = list(zip(all_first_names, gender_labels))
+        random.shuffle(combined_first_names)
+
+        # Generate all combinations of first names and last names
+        all_name_combinations = list(itertools.product(combined_first_names, all_last_names))
+        random.shuffle(all_name_combinations)  # Shuffle the combinations
+
+        # Check if we have enough unique combinations to generate the requested number of names
+        if num_names > len(all_name_combinations):
+            raise ValueError("Not enough unique combinations of first names and last names. Consider adding more names.")
+
+        unique_names = []
+        used_last_names = set()
+
+        # Create unique name combinations ensuring no last names are repeated unless necessary
+        for (first, gender), last in all_name_combinations:
+            if len(unique_names) >= num_names:
+                break
+            if last not in used_last_names:  # Ensure no repeated last names initially
+                unique_names.append({
+                    "first_name": first,
+                    "last_name": last,
+                    "gender": gender,
+                })
+                used_last_names.add(last)
+
+        # Handle case where we still need more names after using each last name once
+        remaining_count = num_names - len(unique_names)
+        if remaining_count > 0:
+            remaining_names = all_name_combinations[:remaining_count]  # Use repeated last names if necessary
+            for (first, gender), last in remaining_names:
+                unique_names.append({
+                    "first_name": first,
+                    "last_name": last,
+                    "gender": gender,
+                })
+        df = pd.DataFrame(unique_names)
+        df.to_csv(os.path.join(BASE_DIR, "datasets", "teachers.csv"), index=None)
+        return df
+
 
 if __name__ == "__main__":
-    sg = StudentManager()
-    # sg.generate_parents_for_students()
-
+    sg = DatasetManager()
