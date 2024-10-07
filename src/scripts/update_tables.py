@@ -1,7 +1,7 @@
 import random
 import time
 from typing import Dict, List
-
+from rich.progress import Progress
 import pandas as pd
 from tqdm import tqdm
 import httpx
@@ -180,30 +180,23 @@ class DataManager:
         data = supabase.table('students').select('student_id', 'parents(income_level)', 'subjects', 'course').order('income_level', desc=True, foreign_table='parents').execute()
 
         ASSESSMENT_TYPES = ["test", "homework", "exam"]
+        time_allocation_df = pd.DataFrame(supabase.table('time_allocation').select('subject_id', 'term_id', 'class_id', 'hours').execute().data)
         records = []
         _datas = data.data
         _length = len(data.data)
-        for _index, student in enumerate(_datas):
-            print(f"Generating assessment data: [{_index+1}/{_length}] ...")
+        for _index, student in tqdm(enumerate(_datas), desc="Generating assessment data"):
             if _index == 0:
                 max_income_level = student['parents']["income_level"]
-
             for class_num in range(1, len(self.classes) + 1):
                 for term in range(1, self.terms_per_class + 1 if class_num not in [3, 6] else 2):
                     for subject in student['subjects']:
-                        while 1:
-                            try:
-                                time_allocation = supabase.table('time_allocation').select('hours').match({
-                                    "subject_id": subject,
-                                    "term_id": term,
-                                    "class_id": class_num
-                                }).execute()
-                                break
-                            except (httpx.RemoteProtocolError, httpx.TimeoutException):
-                                print("Failed to fetch time allocation data, retrying...")
-                                time.sleep(1)
+                        filtered_data = time_allocation_df[
+                            (time_allocation_df["subject_id"] == subject) &
+                            (time_allocation_df["term_id"] == term) &
+                            (time_allocation_df["class_id"] == class_num)
+                        ]
 
-                        teaching_percentage = time_allocation.data[0]['hours']
+                        teaching_percentage = float(filtered_data.to_records(index=None)[0].hours)
                         for assessment_type in ASSESSMENT_TYPES:
                             score = self.calculate_score(student['parents']["income_level"], teaching_percentage, assessment_type, max_income_level)
                             assessment_data = {
@@ -216,22 +209,13 @@ class DataManager:
                             }
                             # Insert into assessments table
                             records.append(assessment_data)
-                            # while 1:
-                            #     try:
-                            #         supabase.table("assessments").insert(assessment_data).execute()
-                            #         break
-                            #     except (
-                            #             httpx.RemoteProtocolError,
-                            #             httpx.TimeoutException,
-                            #             httpx.RequestError,
-                            #             httpx.NetworkError,
-                            #             httpx.HTTPStatusError,
-                            #     ):
-                            #         print("Failed to insert assessment data, retrying...")
-                            #         time.sleep(1)
-                            #         continue
+
         df = pd.DataFrame(records)
         df.to_csv("datasets/assessments.csv", index=None)
+        supabase.table("assessments").insert(records).execute()
+
+    def generate_students_attendance_data(self):
+        pass
 
 
 if __name__ == "__main__":
