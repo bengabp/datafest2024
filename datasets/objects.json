@@ -35,6 +35,30 @@
       "food_and_nutrition"
     ]
   },
+  "subject_divisions": {
+    "science": [
+      "physics",
+      "chemistry",
+      "biology",
+      "computer_studies"
+    ],
+    "art": [
+      "commerce",
+      "financial_accounting",
+      "government",
+      "marketing"
+    ],
+    "electives": [
+      "crs",
+      "agricultural_science",
+      "food_and_nutrition",
+      "crs",
+      "geography",
+      "literature",
+      "economics",
+      "office_practice"
+    ]
+  },
   "classes": [
     "jss1",
     "jss2",

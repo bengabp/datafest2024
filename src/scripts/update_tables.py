@@ -17,6 +17,9 @@ class DataManager:
         self.jss_subjects = self.subjects['jss']
         self.sss_subjects = self.subjects['sss']
         self.nigerian_first_names = _objects['nigerian_first_names']
+        self.terms_per_class = 3
+        self.subject_divisions = _objects['subject_divisions']
+        self.electives = self.subject_divisions['electives']
 
         with open(os.path.join(BASE_DIR, 'datasets', "names.json")) as f:
             self.gnames = json.load(f)
@@ -26,6 +29,13 @@ class DataManager:
             for _v in v:
                 _all_subs.add(_v)
         self.all_subjects = list(_all_subs)
+
+    def fill_subjects_with_electives(self, subjects: List) -> List:
+        while len(subjects) <= 9:
+            elective = random.choice(self.electives)
+            if elective not in subjects:
+                subjects.append(elective)
+        return subjects
 
     def get_random_occupation(self) -> Dict:
         """
@@ -103,19 +113,96 @@ class DataManager:
                 if f > len(self.gnames['female']):
                     f = 0
 
-    def create_class_tables(self):
+    def generate_teachers_time_allocation_data(self):
         """
-        Creates all the tables from jss1-ss3 for storing assessments
+        Generates synthetic data representing hours spent by each teacher teaching their subject (in percentage)
+
+        :return: None
+        """
+
+        data = supabase.table('teachers').select('id', 'subject_id').execute()
+        for teacher in data.data:
+            for class_num in range(1, len(self.classes)+1):
+                # Condition ensures term is 3 as long as class is not sss3 and jss3 cos they have only one term
+                for term in range(1, self.terms_per_class + 1 if class_num not in [2, 6] else 2):
+                    percentage_taught = round(random.uniform(0.1, 1.1) * 100, 2)
+                    time_allocation_data = {
+                        "teacher_id": teacher["id"],
+                        "class_id": class_num,
+                        "term_id": term,
+                        "subject_id": teacher["subject_id"],
+                        "hours": percentage_taught
+                    }
+                    supabase.table('time_allocation').insert(time_allocation_data).execute()
+
+    def update_student_subjects(self):
+        """
+        Updates subjects offered by a student in senior secondary as from ss2
         :return:
         """
 
-        pass
+        data = supabase.table("subjects").select('id', 'subject_name').execute()
+        subject_mapping = {subject['subject_name']: subject['id'] for subject in data.data}
+        data = supabase.table('students').select('student_id').execute()
+        for student in data.data:
+            # Decide if student is science or art:
+            course = random.choice(['science', 'art'])
+            subjects = [subject_mapping[s] for s in self.fill_subjects_with_electives(self.subject_divisions[course])]
+            (
+                supabase.table('students')
+               .update({'subjects': subjects, "course": course})
+               .eq("student_id", student['student_id'])
+               .execute())
 
-    def upsert_subjects(self):
-        pass
+    def calculate_score(self, income_level, teaching_percentage, assessment_type, max_income_level):
+        income_influence = 0.8 + (income_level / max_income_level) * 0.4
+        hours_influence = teaching_percentage / 100
+        base_scores = {
+            "test": random.randint(40, 70),
+            "homework": random.randint(50, 80),
+            "exam": random.randint(50, 90),
+            "class_test": random.randint(45, 75)
+        }
+        base_score = base_scores[assessment_type]
+        score = base_score * income_influence * hours_influence
+        return min(100, max(0, score + random.uniform(-5, 5)))
+
+    def generate_students_accessment_data(self):
+        # Find max income_level
+
+        max_income_level = 0
+        data = supabase.table('students').select('student_id', 'parents(income_level)', 'subjects', 'course').order('income_level', desc=True, foreign_table='parents').execute()
+
+        ASSESSMENT_TYPES = ["test", "homework", "exam", "class_test"]
+
+        for _index, student in enumerate(data.data):
+            if _index == 0:
+                max_income_level = student['parents']["income_level"]
+
+            for class_num in range(1, len(self.classes) + 1):
+                for term in range(1, self.terms_per_class + 1 if class_num not in [2, 6] else 2):
+                    for subject in student['subjects']:
+                        time_allocation = supabase.table('time_allocation').select('hours').match({
+                            "subject_id": subject,
+                            "term_id": term,
+                            "class_id": class_num
+                        }).execute()
+                        teaching_percentage = time_allocation.data[0]['hours']
+                        for assessment_type in ASSESSMENT_TYPES:
+                            score = self.calculate_score(student['parents']["income_level"], teaching_percentage, assessment_type, max_income_level)
+                            assessment_data = {
+                                "student_id": student["student_id"],
+                                "class_id": class_num,
+                                "term_id": term,
+                                "subject_id": subject,
+                                "assessment_type": assessment_type,
+                                "score": round(score, 2)
+                            }
+                            # Insert into assessments table
+                            supabase.table("assessments").insert(assessment_data).execute()
 
 
 if __name__ == "__main__":
     manager = DataManager()
-    manager.update_parent_metadata()
+    manager.generate_students_accessment_data()
     print(manager.classes)
