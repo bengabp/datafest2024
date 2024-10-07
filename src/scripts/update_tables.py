@@ -130,7 +130,7 @@ class DataManager:
         for teacher in data.data:
             for class_num in range(1, len(self.classes)+1):
                 # Condition ensures term is 3 as long as class is not sss3 and jss3 cos they have only one term
-                for term in range(1, self.terms_per_class + 1 if class_num not in [2, 6] else 2):
+                for term in range(1, self.terms_per_class + 1 if class_num not in [3, 6] else 2):
                     percentage_taught = round(random.uniform(0.1, 1.1) * 100, 2)
                     time_allocation_data = {
                         "teacher_id": teacher["id"],
@@ -182,12 +182,12 @@ class DataManager:
         ASSESSMENT_TYPES = ["test", "homework", "exam"]
         records = []
 
-        for _index, student in tqdm(enumerate(data.data)):
+        for _index, student in tqdm(enumerate(data.data), desc="Assessment data generation:"):
             if _index == 0:
                 max_income_level = student['parents']["income_level"]
 
             for class_num in range(1, len(self.classes) + 1):
-                for term in range(1, self.terms_per_class + 1 if class_num not in [2, 6] else 2):
+                for term in range(1, self.terms_per_class + 1 if class_num not in [3, 6] else 2):
                     for subject in student['subjects']:
                         while 1:
                             try:
