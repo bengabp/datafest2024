@@ -11,7 +11,5 @@ config = Config(os.path.join(BASE_DIR, ".env"))
 
 url: str = config("SUPABASE_URL")
 key: str = config("SUPABASE_KEY")
-supabase_client: Client = create_client(url, key)
-
-print(supabase_client)
+supabase: Client = create_client(url, key)
 

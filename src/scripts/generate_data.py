@@ -159,7 +159,7 @@ class DatasetManager:
         df.to_csv("datasets/students_p_rows.csv", index=None)
         pd.DataFrame(parents).to_csv("datasets/parents.csv", index=None)
 
-    def generate_teachers(self, num_names=10) -> pd.DataFrame:
+    def generate_teachers(self, num_names=10, save=True) -> pd.DataFrame:
 
         # Combine all last names from the JSON data
         all_last_names = self.names_data["igbo"] + self.names_data["hausa"] + self.names_data["yoruba"]
@@ -206,7 +206,8 @@ class DatasetManager:
                     "gender": gender,
                 })
         df = pd.DataFrame(unique_names)
-        df.to_csv(os.path.join(BASE_DIR, "datasets", "teachers.csv"), index=None)
+        if save:
+            df.to_csv(os.path.join(BASE_DIR, "datasets", "teachers.csv"), index=None)
         return df
 
 
