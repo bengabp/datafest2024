@@ -1,5 +1,9 @@
 import random
+import time
 from typing import Dict, List
+from tqdm import tqdm
+import httpx
+
 from src.settings import supabase, BASE_DIR
 import os
 from src.scripts.generate_data import DatasetManager
@@ -173,9 +177,9 @@ class DataManager:
         max_income_level = 0
         data = supabase.table('students').select('student_id', 'parents(income_level)', 'subjects', 'course').order('income_level', desc=True, foreign_table='parents').execute()
 
-        ASSESSMENT_TYPES = ["test", "homework", "exam", "class_test"]
+        ASSESSMENT_TYPES = ["test", "homework", "exam"]
 
-        for _index, student in enumerate(data.data):
+        for _index, student in tqdm(enumerate(data.data)):
             if _index == 0:
                 max_income_level = student['parents']["income_level"]
 
@@ -199,7 +203,20 @@ class DataManager:
                                 "score": round(score, 2)
                             }
                             # Insert into assessments table
-                            supabase.table("assessments").insert(assessment_data).execute()
+                            while 1:
+                                try:
+                                    supabase.table("assessments").insert(assessment_data).execute()
+                                    break
+                                except (
+                                        httpx.RemoteProtocolError,
+                                        httpx.TimeoutException,
+                                        httpx.RequestError,
+                                        httpx.NetworkError,
+                                        httpx.HTTPStatusError,
+                                ):
+                                    print("Failed to insert assessment data, retrying...")
+                                    time.sleep(1)
+                                    continue
 
 
 if __name__ == "__main__":
