@@ -181,8 +181,10 @@ class DataManager:
 
         ASSESSMENT_TYPES = ["test", "homework", "exam"]
         records = []
-
-        for _index, student in tqdm(enumerate(data.data), desc="Assessment data generation:"):
+        _datas = data.data
+        _length = len(data.data)
+        for _index, student in enumerate(_datas):
+            print(f"Generating assessment data: [{_index+1}/{_length}] ...")
             if _index == 0:
                 max_income_level = student['parents']["income_level"]
 
