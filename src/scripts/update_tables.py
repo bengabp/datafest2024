@@ -1,6 +1,8 @@
 import random
 import time
 from typing import Dict, List
+
+import pandas as pd
 from tqdm import tqdm
 import httpx
 
@@ -178,6 +180,7 @@ class DataManager:
         data = supabase.table('students').select('student_id', 'parents(income_level)', 'subjects', 'course').order('income_level', desc=True, foreign_table='parents').execute()
 
         ASSESSMENT_TYPES = ["test", "homework", "exam"]
+        records = []
 
         for _index, student in tqdm(enumerate(data.data)):
             if _index == 0:
@@ -203,20 +206,23 @@ class DataManager:
                                 "score": round(score, 2)
                             }
                             # Insert into assessments table
-                            while 1:
-                                try:
-                                    supabase.table("assessments").insert(assessment_data).execute()
-                                    break
-                                except (
-                                        httpx.RemoteProtocolError,
-                                        httpx.TimeoutException,
-                                        httpx.RequestError,
-                                        httpx.NetworkError,
-                                        httpx.HTTPStatusError,
-                                ):
-                                    print("Failed to insert assessment data, retrying...")
-                                    time.sleep(1)
-                                    continue
+                            records.append(assessment_data)
+                            # while 1:
+                            #     try:
+                            #         supabase.table("assessments").insert(assessment_data).execute()
+                            #         break
+                            #     except (
+                            #             httpx.RemoteProtocolError,
+                            #             httpx.TimeoutException,
+                            #             httpx.RequestError,
+                            #             httpx.NetworkError,
+                            #             httpx.HTTPStatusError,
+                            #     ):
+                            #         print("Failed to insert assessment data, retrying...")
+                            #         time.sleep(1)
+                            #         continue
+        df = pd.DataFrame(records)
+        df.to_csv("datasets/assessments.csv", index=None)
 
 
 if __name__ == "__main__":
