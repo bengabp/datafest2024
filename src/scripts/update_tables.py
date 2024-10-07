@@ -189,11 +189,18 @@ class DataManager:
             for class_num in range(1, len(self.classes) + 1):
                 for term in range(1, self.terms_per_class + 1 if class_num not in [2, 6] else 2):
                     for subject in student['subjects']:
-                        time_allocation = supabase.table('time_allocation').select('hours').match({
-                            "subject_id": subject,
-                            "term_id": term,
-                            "class_id": class_num
-                        }).execute()
+                        while 1:
+                            try:
+                                time_allocation = supabase.table('time_allocation').select('hours').match({
+                                    "subject_id": subject,
+                                    "term_id": term,
+                                    "class_id": class_num
+                                }).execute()
+                                break
+                            except (httpx.RemoteProtocolError, httpx.TimeoutException):
+                                print("Failed to fetch time allocation data, retrying...")
+                                time.sleep(1)
+
                         teaching_percentage = time_allocation.data[0]['hours']
                         for assessment_type in ASSESSMENT_TYPES:
                             score = self.calculate_score(student['parents']["income_level"], teaching_percentage, assessment_type, max_income_level)
