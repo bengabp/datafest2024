@@ -1,0 +1,301 @@
+student_id,student_name,date_of_birth,gender,guardian_id,subjects,course,student_academic_performance_score,guardian_name,relationship,occupation,income_level
+0,David Ayo,2010-08-10,male,0,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.58809999999999,Oreoluwa Ayo,niece,Musician,180000
+1,Sarah Bamidele,2010-06-25,female,1,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,43.65143333333333,Jamiu Bamidele,father,Dentist,450000
+2,Mary Olamide,2009-09-04,female,2,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,37.33801111111111,Adebimpe Olamide,mother,Software Developer,350000
+3,Grace Akuchi,2010-02-01,female,3,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.94136666666666,Raheem Akuchi,father,Electrician,70000
+4,Emmanuel Idowu,2011-09-01,male,4,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.924333333333333,Salimot Idowu,mother,Makeup Artist,80000
+5,Rebecca Ndidi,2011-12-28,female,5,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,37.33065555555555,Samuel Ndidi,uncle,Actor,200000
+6,Elizabeth Chidiebube,2009-01-22,female,6,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.68908888888889,Chidinma Chidiebube,aunt,Housekeeper,25000
+7,Esther Ayotunde,2011-12-05,female,7,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.88334444444445,Yusuf Ayotunde,nephew,Artist,150000
+8,Deborah Chidiebere,2009-04-02,female,8,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.28598888888889,Fadekemi Chidiebere,mother,Imam,120000
+9,Ruth Kelechi,2011-10-06,female,9,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.02641111111111,Abubakar Kelechi,uncle,Fashion Designer,120000
+10,John Opeyemi,2010-03-06,male,10,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,37.97956666666666,Folusho Opeyemi,niece,Pharmacist,280000
+11,Naomi Dayo,2009-11-23,female,11,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,31.556533333333334,Chris Dayo,uncle,Driver,50000
+12,Hope Chikere,2010-06-22,female,12,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,38.50745555555555,Atinuke Chikere,mother,Civil Engineer,300000
+13,Joy Chikelu,2009-03-15,female,13,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,36.302611111111105,Raheem Chikelu,nephew,Digital Marketer,180000
+14,Faith Chisom,2011-09-05,female,14,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.11504444444444,Adedoyin Chisom,mother,Police Officer,100000
+15,Patience Oluwatoyin,2009-02-01,female,15,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,43.26525555555555,Sadiq Oluwatoyin,nephew,Doctor,500000
+16,Daniel Adebowale,2010-10-20,male,16,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,45.58473333333334,Rukayat Adebowale,niece,Pilot,600000
+17,Rebecca Chiemeka,2010-05-03,female,17,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,40.77888888888889,Tijani Chiemeka,uncle,Business Analyst,320000
+18,Ngozi Adeola,2009-01-07,female,18,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.157000000000004,Esther Adeola,mother,Pastor,150000
+19,Temitope Adisa,2011-02-26,female,19,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.20734444444444,Taofeek Adisa,uncle,Photographer,100000
+20,Joseph Olusola,2009-11-22,male,20,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,40.43877777777778,Ufuoma Olusola,aunt,Financial Analyst,320000
+21,Samuel Chidiebele,2009-02-03,male,21,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.866533333333333,Isiaka Chidiebele,uncle,Barber,40000
+22,Michael Ekundayo,2009-03-17,male,22,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,37.39917777777777,Aderonke Ekundayo,niece,Pharmacist,280000
+23,Folasade Chijindum,2011-05-12,female,23,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.97503333333333,Olanrewaju Chijindum,nephew,Fashion Designer,120000
+24,Yemisi Chizoba,2009-11-03,female,24,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,37.7558,Iretiola Chizoba,niece,Human Resources Manager,250000
+25,Chinwe Abioye,2010-11-19,female,25,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,38.5793111111111,Sola Abioye,uncle,Real Estate Agent,250000
+26,Ogechi Taiwo,2009-10-15,female,26,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.753555555555554,Teniola Taiwo,niece,Plumber,50000
+27,Ezinne Chidi,2010-11-03,female,27,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,37.425044444444445,Kayode Chidi,uncle,Human Resources Manager,250000
+28,Nkechi Ekene,2011-02-07,female,28,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,36.582744444444444,Titilayo Ekene,niece,Pharmacist,280000
+29,Tochi Uchenna,2011-11-14,female,29,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,47.90104444444444,Okon Uchenna,father,Pilot,600000
+30,Adesola Adedayo,2011-02-20,female,30,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,37.98235555555556,Chioma Adedayo,mother,Architect,300000
+31,Joshua Kehinde,2010-12-02,male,31,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.60784444444444,Ibukun Kehinde,nephew,Digital Marketer,180000
+32,Funke Chidubem,2010-07-09,female,32,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.12938888888889,Ejiro Chidubem,niece,Driver,50000
+33,Adaobi Kyauta,2010-10-03,female,33,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,35.13616666666667,Aliyu Kyauta,father,Graphic Designer,150000
+34,Paul Alaba,2009-04-23,male,34,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.40581111111111,Kikelomo Alaba,niece,Teacher,80000
+35,Peter Ife,2010-09-16,male,35,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.60054444444444,Kolade Ife,father,Security Guard,30000
+36,Stephen Toyin,2009-05-11,male,36,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.1016,Olayemi Toyin,mother,Imam,120000
+37,Zainab Uzochi,2010-11-08,female,37,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.436188888888886,Gbolahan Uzochi,nephew,Tailor,40000
+38,Bukola Abimbola,2009-06-13,female,38,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,41.157044444444445,Rafiat Abimbola,aunt,Software Engineer,350000
+39,Olayinka Olayinka,2009-05-23,female,39,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.60333333333333,Raufu Olayinka,uncle,Receptionist,50000
+40,Zainab Ayomide,2010-02-28,female,40,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.981766666666665,Patricia Ayomide,aunt,Social Media Manager,120000
+41,Matthew Dada,2010-11-21,male,41,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,35.23871111111111,Opeyemi Dada,father,Human Resources Manager,250000
+42,Mariam Chigozie,2009-06-20,female,42,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,39.71453333333333,Morohunkeji Chigozie,aunt,Data Scientist,400000
+43,Folake Uche,2009-05-08,female,43,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,36.85796666666666,Ikenna Uche,father,Human Resources Manager,250000
+44,Ibukun Onyekachi,2011-05-05,female,44,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.912477777777777,Aminat Onyekachi,aunt,Driver,50000
+45,Isaac Temitope,2011-10-07,male,45,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.87477777777778,Ejiro Temitope,nephew,Baker,80000
+46,Chinonye Fumnanya,2011-05-15,female,46,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.418488888888895,Bukola Fumnanya,aunt,Baker,80000
+47,Feyikemi Ayodele,2011-12-12,female,47,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.61547777777778,Yakubu Ayodele,nephew,Chef,100000
+48,Andrew Obi,2010-10-09,male,48,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,42.57407777777777,Bilikis Obi,niece,Entrepreneur,500000
+49,Philip Abiodun,2009-01-25,male,49,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.9869,Simon Abiodun,nephew,Journalist,150000
+50,Olawunmi Uzoma,2011-04-02,female,50,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.074044444444446,Omowunmi Uzoma,niece,Graphic Designer,150000
+51,Yetunde Abiola,2011-06-12,female,51,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,38.326077777777776,Gbenga Abiola,uncle,Human Resources Manager,250000
+52,Amara Akachi,2011-03-24,male,52,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.54392222222222,Mobolaji Akachi,niece,Artist,150000
+53,Modupe Eniola,2010-06-08,female,53,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,35.550444444444445,Chris Eniola,uncle,Human Resources Manager,250000
+54,Ifeanyi Adebola,2009-07-23,male,54,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.317933333333336,Titilayo Adebola,niece,Imam,120000
+55,Chukwuemeka Chinwendu,2009-04-28,male,55,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.685722222222225,Abdullahi Chinwendu,nephew,Housekeeper,25000
+56,Oluwakemi Chima,2009-10-02,female,56,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,39.07124444444444,Ibiyemi Chima,niece,Business Analyst,320000
+57,Aminat Abidemi,2010-10-05,female,57,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.39873333333333,Saheed Abidemi,nephew,Pastor,150000
+58,Fatimat Chibuzo,2009-01-26,female,58,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.451544444444444,Chidinma Chibuzo,niece,Mechanic,60000
+59,Favour Chinonso,2009-03-05,female,59,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.39276666666667,Usman Chinonso,father,Police Officer,100000
+60,Olumide Oluwaseun,2010-11-03,male,60,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.9995,Bunmi Oluwaseun,mother,University Lecturer,250000
+61,Uchenna Ekenedilichukwu,2011-02-15,male,61,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.48336666666666,Zubair Ekenedilichukwu,father,Housekeeper,25000
+62,Aisha Tochukwu,2011-08-10,female,62,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.653099999999995,Chioma Tochukwu,mother,Farmer,50000
+63,Ibukunoluwa Adetokunbo,2010-03-07,female,63,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.76284444444444,Segun Adetokunbo,nephew,Imam,120000
+64,Adebimpe Oni,2010-11-20,female,64,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,37.66786666666667,Niniola Oni,mother,Accountant,250000
+65,Salimot Ogochukwu,2010-02-23,female,65,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,43.60692222222222,Adebayo Ogochukwu,father,Dentist,450000
+66,Esther Onyekachukwu,2011-11-04,female,66,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,29.65573333333333,Moradeke Onyekachukwu,mother,Cleaner,25000
+67,Ufuoma Ige,2010-03-05,female,67,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,37.745977777777775,Kenneth Ige,uncle,Real Estate Agent,250000
+68,Kelechi Folami,2011-01-02,male,68,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.41217777777778,Damilola Folami,niece,Artist,150000
+69,Ayodele Onyeka,2011-08-10,male,69,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.56541111111111,Hassan Onyeka,father,Artist,150000
+70,Obinna Chimezie,2009-06-14,male,70,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.572944444444445,Tolani Chimezie,niece,Makeup Artist,80000
+71,Aderonke Oluwaseyi,2011-08-23,female,71,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,36.49147777777778,Chijioke Oluwaseyi,father,Real Estate Agent,250000
+72,Iretiola Yalwa,2010-07-17,female,72,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.72603333333333,Sarah Yalwa,aunt,Imam,120000
+73,Tope Enitan,2011-06-05,male,73,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.177033333333334,David Enitan,father,Police Officer,100000
+74,Oluwaseun Ayo,2009-09-02,male,74,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,38.61773333333333,Mary Ayo,niece,Banker,350000
+75,Teniola Bamidele,2010-06-24,female,75,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,37.06261111111111,Emmanuel Bamidele,uncle,Real Estate Agent,250000
+76,Titilayo Olamide,2011-09-15,female,76,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.94262222222222,Grace Olamide,mother,Event Planner,120000
+77,Chioma Akuchi,2010-05-16,female,77,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,38.13797777777778,John Akuchi,uncle,Accountant,250000
+78,Nnamdi Idowu,2011-08-20,male,78,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.7016,Rebecca Idowu,niece,Pastor,150000
+79,Ejiro Ndidi,2009-12-22,female,79,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.44598888888889,Daniel Ndidi,nephew,Photographer,100000
+80,Rafiat Chidiebube,2011-03-10,female,80,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.81084444444444,Elizabeth Chidiebube,mother,Musician,180000
+81,Oluwafemi Idowu,2009-09-07,male,81,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.25418888888888,Joseph Idowu,nephew,Imam,120000
+82,Patricia Ayotunde,2011-08-03,female,82,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.02523333333333,Esther Ayotunde,mother,Plumber,50000
+83,Ibiyemi Chidiebere,2010-02-17,female,83,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,43.04065555555555,Samuel Chidiebere,father,Dentist,450000
+84,Chidinma Kelechi,2009-08-18,female,84,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.32558888888889,Deborah Kelechi,niece,Graphic Designer,150000
+85,Ayo Opeyemi,2011-08-27,male,85,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,37.845122222222216,Michael Opeyemi,nephew,Pharmacist,280000
+86,Bunmi Ndidi,2011-02-04,female,86,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,44.72802222222222,Ruth Ndidi,aunt,Lawyer,400000
+87,Chioma Kelechi,2011-01-21,female,87,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.289233333333335,Joshua Kelechi,uncle,Graphic Designer,150000
+88,Niniola Dayo,2011-07-15,female,88,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.61234444444444,Naomi Dayo,mother,Driver,50000
+89,Folasade Chikere,2009-03-19,female,89,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.719388888888886,Paul Chikere,nephew,Digital Marketer,180000
+90,Nneka Chikelu,2009-03-12,female,90,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.788677777777774,Hope Chikelu,aunt,Receptionist,50000
+91,Aminat Chisom,2010-06-16,female,91,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.43912222222222,Peter Chisom,uncle,Mechanic,60000
+92,Ruqayyah Oluwatoyin,2011-01-14,female,92,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,39.37418888888889,Joy Oluwatoyin,niece,Financial Analyst,320000
+93,Femi Olamide,2009-04-13,male,93,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,37.86242222222222,Stephen Olamide,father,Civil Engineer,300000
+94,Olamide Adebowale,2011-11-28,male,94,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,40.939188888888886,Faith Adebowale,mother,Lawyer,400000
+95,Modupeola Chiemeka,2009-03-13,female,95,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.27565555555556,Matthew Chiemeka,father,Social Media Manager,120000
+96,Precious Adeola,2010-04-15,female,96,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.89565555555555,Patience Adeola,niece,Pastor,150000
+97,Damilola Adisa,2010-01-21,female,97,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.65076666666666,Isaac Adisa,uncle,Musician,180000
+98,Ahmed Olusola,2011-02-18,male,98,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.222322222222225,Rebecca Olusola,niece,Actor,200000
+99,Ibrahim Chiemeka,2010-05-20,male,99,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.734988888888893,Andrew Chiemeka,nephew,Barber,40000
+100,Ebuka Chidiebele,2011-05-05,male,100,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.2771,Ngozi Chidiebele,mother,Police Officer,100000
+101,Ayodele Chidiebele,2010-03-14,female,101,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.41261111111111,Philip Chidiebele,nephew,Police Officer,100000
+102,Tijani Ekundayo,2010-12-18,male,102,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,38.803,Temitope Ekundayo,niece,Software Developer,350000
+103,Abike Chijindum,2010-03-12,female,103,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.21446666666667,Amara Chijindum,father,Social Media Manager,120000
+104,Isioma Ayotunde,2010-10-19,female,104,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.407388888888896,Folasade Ayotunde,mother,Graphic Designer,150000
+105,Ronke Chizoba,2011-03-16,female,105,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.3653,Ifeanyi Chizoba,uncle,Farmer,50000
+106,Adenike Kelechi,2010-07-19,female,106,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.654066666666665,Yemisi Kelechi,niece,Makeup Artist,80000
+107,Ayotunde Abioye,2010-08-01,female,107,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,29.451066666666666,Chukwuemeka Abioye,father,Housekeeper,25000
+108,Yewande Taiwo,2009-04-12,female,108,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,41.35375555555556,Chinwe Taiwo,niece,Dentist,450000
+109,Taiwo Chidi,2011-07-04,female,109,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,38.091055555555556,Olumide Chidi,uncle,Software Developer,350000
+110,Titi Ekene,2010-07-06,female,110,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,37.78333333333333,Ogechi Ekene,aunt,University Lecturer,250000
+111,Ayanfeoluwa Uchenna,2009-08-14,female,111,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.92466666666667,Uchenna Uchenna,father,Artist,150000
+112,Olajumoke Adedayo,2009-08-22,female,112,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.590999999999998,Ezinne Adedayo,mother,Housekeeper,25000
+113,Segun Kehinde,2010-02-07,male,113,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.75082222222222,Kelechi Kehinde,father,Photographer,100000
+114,Iretiola Chidubem,2011-11-16,female,114,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,38.94166666666667,Nkechi Chidubem,niece,Architect,300000
+115,Sade Kyauta,2010-08-02,female,115,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,39.077666666666666,Ayodele Kyauta,father,Financial Analyst,320000
+116,Chigozie Kyauta,2011-12-02,male,116,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.0996,Tochi Kyauta,aunt,Graphic Designer,150000
+117,Osas Alaba,2009-04-17,male,117,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,43.09792222222222,Obinna Alaba,uncle,Dentist,450000
+118,Tolu Ife,2011-03-03,male,118,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,31.713599999999996,Adesola Ife,mother,Farmer,50000
+119,Chibuike Ekene,2009-09-01,male,119,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,37.4622,Tope Ekene,uncle,University Lecturer,250000
+120,Tolulope Kehinde,2010-12-03,female,120,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,40.91083333333332,Funke Kehinde,aunt,Software Developer,350000
+121,Olayinka Kehinde,2011-08-12,female,121,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.403555555555556,Oluwaseun Kehinde,father,Tailor,40000
+122,Mojisola Ekundayo,2010-03-10,female,122,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.037211111111116,Adaobi Ekundayo,niece,Housekeeper,25000
+123,Folakemi Ayotunde,2009-01-09,female,123,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,41.85305555555555,Nnamdi Ayotunde,father,Software Developer,350000
+124,Jibril Toyin,2009-03-10,male,124,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,46.85905555555555,Zainab Toyin,niece,Pilot,600000
+125,Oluwafunmilayo Uzochi,2011-12-20,female,125,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.583477777777773,Oluwafemi Uzochi,uncle,Tailor,40000
+126,Mofoluwake Chikere,2011-08-10,female,126,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,40.694722222222225,Bukola Chikere,mother,Software Developer,350000
+127,Maryam Abimbola,2009-04-02,female,127,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.885233333333332,Ayo Abimbola,uncle,Mechanic,60000
+128,Enitan Olayinka,2010-09-22,female,128,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.21847777777777,Olayinka Olayinka,mother,Baker,80000
+129,Bukky Chidiebele,2011-10-06,female,129,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,41.6995,Femi Chidiebele,uncle,Lawyer,400000
+130,Zainab Chidiebube,2010-03-24,female,130,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,43.218422222222216,Zainab Chidiebube,niece,Entrepreneur,500000
+131,Opeyemi Ayomide,2009-09-15,female,131,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,36.69597777777778,Olamide Ayomide,nephew,Nurse,200000
+132,Anike Taiwo,2011-05-09,female,132,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,29.835066666666663,Mariam Taiwo,aunt,Security Guard,30000
+133,Omolara Abioye,2010-09-07,female,133,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,39.33981111111111,Ahmed Abioye,uncle,Financial Analyst,320000
+134,Emeka Dada,2009-12-16,male,134,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,39.35005555555556,Folake Dada,aunt,Lawyer,400000
+135,Kudirat Chigozie,2009-12-24,female,135,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.756544444444444,Ibrahim Chigozie,nephew,Soldier,150000
+136,Fatimah Ayomide,2011-04-05,female,136,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,35.68964444444445,Ibukun Ayomide,niece,Musician,180000
+137,Chinyere Uche,2011-08-09,female,137,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.48977777777778,Ebuka Uche,father,Soldier,150000
+138,Oluwaseun Uzochi,2010-09-16,female,138,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.03971111111111,Chinonye Uzochi,aunt,Graphic Designer,150000
+139,Oreoluwa Adebowale,2010-12-17,female,139,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.277011111111115,Tijani Adebowale,father,Pastor,150000
+140,Ayomide Onyekachi,2011-06-23,female,140,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.5017,Feyikemi Onyekachi,niece,Pastor,150000
+141,Chukwudi Uzochi,2011-05-19,male,141,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.70292222222222,Segun Uzochi,uncle,Event Planner,120000
+142,Aminat Onyekachi,2011-06-19,female,142,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,40.268633333333334,Olawunmi Onyekachi,aunt,Software Developer,350000
+143,Ireti Chidiebere,2011-01-09,female,143,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.874377777777774,Chigozie Chidiebere,father,Makeup Artist,80000
+144,Anuoluwapo Opeyemi,2010-06-06,female,144,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.209855555555553,Yetunde Opeyemi,mother,Security Guard,30000
+145,Suleiman Temitope,2011-01-02,male,145,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.613144444444444,Osas Temitope,father,Actor,200000
+146,Ikenna Chiemeka,2011-02-01,male,146,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.4802,Modupe Chiemeka,aunt,Tailor,40000
+147,Kikelomo Fumnanya,2011-01-08,female,147,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.52233333333333,Tolu Fumnanya,nephew,Digital Marketer,180000
+148,Oluwatosin Ayodele,2010-07-19,female,148,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.42622222222222,Oluwakemi Ayodele,niece,Taxi Driver,60000
+149,Samuel Obi,2009-03-01,male,149,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,40.561366666666665,Chibuike Obi,uncle,Data Scientist,400000
+150,Yusuf Ayodele,2011-06-17,male,150,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.97142222222222,Aminat Ayodele,mother,Tailor,40000
+151,Abubakar Chidubem,2010-04-14,male,151,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,29.864566666666672,Jibril Chidubem,father,Housekeeper,25000
+152,Chris Abimbola,2011-11-02,male,152,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.406977777777776,Fatimat Abimbola,aunt,Artist,150000
+153,Raheem Chidiebube,2010-04-21,male,153,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,39.22591111111112,Emeka Chidiebube,father,Civil Engineer,300000
+154,Sadiq Abiodun,2011-08-05,male,154,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.395888888888884,Favour Abiodun,aunt,Musician,180000
+155,Ifeoluwa Uzoma,2011-07-16,female,155,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.40046666666666,Chukwudi Uzoma,nephew,Musician,180000
+156,Chizoba Chikere,2011-04-05,female,156,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.814766666666667,Aisha Chikere,mother,Security Guard,30000
+157,Tiwatope Onyekachi,2010-12-13,female,157,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.52868888888889,Suleiman Onyekachi,father,Teacher,80000
+158,Omowunmi Idowu,2011-05-07,female,158,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.67643333333333,Ibukunoluwa Idowu,aunt,Barber,40000
+159,Tijani Abimbola,2011-06-18,male,159,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.718944444444446,Ikenna Abimbola,uncle,Photographer,100000
+160,Aliyu Olamide,2011-06-13,male,160,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,29.224588888888885,Folasade Olamide,aunt,Security Guard,30000
+161,Gbemisola Abiola,2009-05-25,female,161,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.878233333333334,Chukwu Abiola,nephew,Artist,150000
+162,Temidayo Ekene,2010-05-13,female,162,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,31.991366666666664,Nneka Ekene,niece,Housekeeper,25000
+163,Kolade Obi,2009-05-09,male,163,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.45033333333333,Ayoola Obi,father,Photographer,100000
+164,Ayomide Kyauta,2010-02-08,female,164,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.364011111111104,Aminat Kyauta,aunt,Event Planner,120000
+165,Opeyemi Akachi,2009-03-03,male,165,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,40.78722222222222,Idris Akachi,nephew,Lawyer,400000
+166,Morounkeji Eniola,2010-07-14,female,166,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.106255555555553,Ruqayyah Eniola,niece,Security Guard,30000
+167,Yemisi Adedayo,2010-09-22,female,167,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.70315555555555,Kunle Adedayo,nephew,Soldier,150000
+168,Yetunde Chidubem,2011-01-24,female,168,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,36.63225555555555,Modupeola Chidubem,mother,Nurse,200000
+169,Omolola Adisa,2011-11-03,female,169,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,39.823788888888885,Chijioke Adisa,nephew,Veterinarian,300000
+170,Ikenna Temitope,2010-02-14,male,170,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.72665555555555,Precious Temitope,niece,Imam,120000
+171,Ejiro Dayo,2010-08-06,male,171,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,40.04354444444445,Amadi Dayo,nephew,Banker,350000
+172,Yakubu Adebola,2010-05-14,male,172,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,29.53056666666667,Damilola Adebola,niece,Housekeeper,25000
+173,Simon Chinwendu,2011-03-01,male,173,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.52951111111111,Kasim Chinwendu,father,Taxi Driver,60000
+174,Bilkisu Kelechi,2011-04-12,female,174,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.39123333333333,Ayodele Kelechi,aunt,Graphic Designer,150000
+175,Morayo Abioye,2010-10-25,female,175,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.35988888888889,Ekene Abioye,uncle,Digital Marketer,180000
+176,Gbenga Abiodun,2011-08-16,male,176,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,38.42157777777778,Abike Abiodun,niece,Pharmacist,280000
+177,Folakemi Chinwendu,2011-12-03,female,177,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,31.619733333333333,Omololu Chinwendu,uncle,Plumber,50000
+178,Chris Ekundayo,2009-11-27,male,178,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.908722222222224,Isioma Ekundayo,mother,Architect,300000
+179,Ireti Ayotunde,2010-04-17,female,179,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.01027777777777,Gideon Ayotunde,father,Imam,120000
+180,Titilayo Obi,2009-06-23,female,180,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.50145555555555,Ronke Obi,aunt,Baker,80000
+181,Moyinoluwa Abimbola,2010-05-13,female,181,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.61173333333334,Tolu Abimbola,nephew,Tailor,40000
+182,Seyi Chijindum,2011-10-27,female,182,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.07557777777778,Adenike Chijindum,aunt,Digital Marketer,180000
+183,Abdullahi Chizoba,2010-11-11,male,183,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.47658888888889,Uzoma Chizoba,uncle,Journalist,150000
+184,Ifeoma Adedayo,2010-01-14,female,184,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.151199999999996,Ayotunde Adedayo,niece,Tailor,40000
+185,Aduke Chima,2009-02-09,female,185,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.816522222222222,Innocent Chima,uncle,Housekeeper,25000
+186,Adunola Abioye,2009-03-24,female,186,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.557088888888885,Yewande Abioye,niece,Cleaner,25000
+187,Adebayo Ayotunde,2009-07-18,male,187,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.10004444444444,Anayo Ayotunde,father,Journalist,150000
+188,Onome Chidiebere,2011-07-23,female,188,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.55391111111111,Taiwo Chidiebere,mother,University Lecturer,250000
+189,Chinwe Temitope,2010-10-06,female,189,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.313700000000004,Chuks Temitope,uncle,Imam,120000
+190,Kenneth Chinwendu,2010-03-14,male,190,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,31.441988888888886,Titi Chinwendu,niece,Cleaner,25000
+191,Abiodun Chiemeka,2011-03-02,female,191,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.960033333333335,Yusuf Chiemeka,uncle,Electrician,70000
+192,Hassan Toyin,2011-10-03,male,192,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.21804444444444,Ayanfeoluwa Toyin,niece,Plumber,50000
+193,Ronke Abidemi,2010-02-11,female,193,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,43.70282222222222,Obioma Abidemi,uncle,Entrepreneur,500000
+194,Oyinlola Chizoba,2011-11-06,female,194,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.343633333333333,Olajumoke Chizoba,mother,Barber,40000
+195,Chijioke Adebola,2011-04-28,male,195,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,37.704566666666665,Chidera Adebola,father,Software Engineer,350000
+196,Oreoluwa Chibuzo,2011-11-28,female,196,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,44.07975555555555,Iretiola Chibuzo,mother,Pilot,600000
+197,Chidinma Ife,2009-05-22,female,197,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,36.45245555555555,Yakubu Ife,nephew,Architect,300000
+198,Chukwu Olamide,2010-02-20,male,198,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,42.112133333333325,Sade Olamide,mother,Lawyer,400000
+199,Fadekemi Chima,2009-08-01,female,199,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.76048888888889,Anayo Chima,uncle,Pastor,150000
+200,Folusho Chinonso,2010-06-02,female,200,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,31.590311111111106,Tolulope Chinonso,niece,Housekeeper,25000
+201,Atinuke Olamide,2011-08-22,female,201,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.39198888888888,Umar Olamide,nephew,Teacher,80000
+202,Ayoola Ayotunde,2010-02-24,male,202,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,37.730488888888885,Olayinka Ayotunde,mother,Software Developer,350000
+203,Adedoyin Oluwatoyin,2011-02-11,female,203,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,36.32678888888889,Olatunde Oluwatoyin,uncle,Pharmacist,280000
+204,Rukayat Onyekachi,2009-08-25,female,204,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,40.4316111111111,Mojisola Onyekachi,niece,Financial Analyst,320000
+205,Kikelomo Uzoma,2011-05-21,female,205,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.58672222222222,Abubakar Uzoma,uncle,Chef,100000
+206,Idris Oluwaseun,2009-07-23,male,206,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.91737777777778,Folakemi Oluwaseun,mother,Fashion Designer,120000
+207,Olayemi Chinonso,2009-07-24,female,207,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.865866666666665,Olaniyi Chinonso,father,Fashion Designer,120000
+208,Morohunkeji Taiwo,2011-08-17,female,208,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.75374444444444,Oluwafunmilayo Taiwo,mother,Pastor,150000
+209,Aminat Chiemeka,2010-02-26,female,209,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.06812222222222,Oluwole Chiemeka,uncle,Graphic Designer,150000
+210,Kunle Ekenedilichukwu,2009-09-15,male,210,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,36.23178888888889,Mofoluwake Ekenedilichukwu,mother,Artist,150000
+211,Bukola Tochukwu,2010-10-21,female,211,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,40.31453333333334,Ganiu Tochukwu,nephew,Software Developer,350000
+212,Bilikis Chidi,2010-09-11,female,212,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.04151111111111,Maryam Chidi,aunt,Teacher,80000
+213,Chijioke Ndidi,2009-01-09,male,213,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.36796666666666,Ogbonna Ndidi,father,Plumber,50000
+214,Omowunmi Temitope,2009-10-09,female,214,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.02871111111111,Enitan Temitope,niece,Cleaner,25000
+215,Amadi Akuchi,2009-03-02,male,215,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,39.692255555555555,Yakubu Akuchi,nephew,Veterinarian,300000
+216,Mobolaji Adetokunbo,2009-08-13,female,216,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.382711111111114,Bukky Adetokunbo,niece,Mechanic,60000
+217,Kasim Fumnanya,2011-02-25,male,217,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.459366666666675,Ekene Fumnanya,uncle,Driver,50000
+218,Titilayo Obi,2009-06-16,female,218,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,39.95771111111111,Zainab Obi,niece,Lawyer,400000
+219,Ekene Adisa,2010-09-23,male,219,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,40.07816666666667,Moses Adisa,nephew,Dentist,450000
+220,Moradeke Chizoba,2011-03-24,female,220,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,40.3436,Opeyemi Chizoba,mother,Software Engineer,350000
+221,Damilola Ayotunde,2011-02-18,female,221,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,42.21176666666667,Adebisi Ayotunde,nephew,Lawyer,400000
+222,Tolani Kyauta,2009-05-09,female,222,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.678733333333334,Anike Kyauta,aunt,Imam,120000
+223,Ibukun Chidiebere,2009-02-15,female,223,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.227333333333334,Adekunle Chidiebere,father,Fashion Designer,120000
+224,Toyin Chizoba,2009-06-24,female,224,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,38.69674444444444,Omolara Chizoba,niece,Software Developer,350000
+225,Omololu Chiemeka,2011-05-12,male,225,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.689566666666668,Kunle Chiemeka,nephew,Driver,50000
+226,Oluwakemi Chidiebere,2009-01-05,female,226,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.934066666666666,Kudirat Chidiebere,niece,Mechanic,60000
+227,Fikayo Uchenna,2010-02-15,female,227,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.45761111111111,Tunde Uchenna,uncle,Event Planner,120000
+228,Omobolanle Chidiebele,2009-06-23,female,228,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.23254444444444,Fatimah Chidiebele,mother,Human Resources Manager,250000
+229,Funmilayo Olamide,2009-12-13,female,229,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.28623333333333,Bashir Olamide,uncle,Imam,120000
+230,Gideon Ekene,2010-09-01,male,230,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.47828888888889,Chinyere Ekene,mother,Imam,120000
+231,Rukayat Opeyemi,2009-11-12,female,231,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.34882222222222,Akintunde Opeyemi,nephew,Digital Marketer,180000
+232,Chisara Opeyemi,2009-03-20,female,232,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,39.605244444444445,Oluwaseun Opeyemi,mother,Software Developer,350000
+233,Olayemi Alaba,2009-12-05,female,233,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,44.10585555555556,Oluwadamilola Alaba,uncle,Doctor,500000
+234,Tolu Olusola,2011-12-01,male,234,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.12253333333333,Oreoluwa Olusola,aunt,Baker,80000
+235,Teniola Oni,2010-03-15,female,235,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,38.88645555555555,Raphael Oni,uncle,Accountant,250000
+236,Uzoma Akachi,2010-02-01,male,236,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.177822222222225,Ayomide Akachi,niece,Makeup Artist,80000
+237,Arike Ogochukwu,2010-03-03,female,237,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.603922222222224,Ibukun Ogochukwu,father,Graphic Designer,150000
+238,Tosin Chidiebele,2010-03-23,female,238,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.579211111111114,Aminat Chidiebele,niece,Teacher,80000
+239,Kafayat Taiwo,2009-10-12,female,239,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.5759,Hakeem Taiwo,nephew,Human Resources Manager,250000
+240,Anike Uchenna,2010-06-15,female,240,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.99341111111111,Ireti Uchenna,mother,Imam,120000
+241,Iretiola Abioye,2009-04-07,female,241,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,31.928500000000003,Segun Abioye,uncle,Housekeeper,25000
+242,Innocent Chiemeka,2009-09-04,male,242,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.434822222222216,Anuoluwapo Chiemeka,aunt,Pastor,150000
+243,Anayo Olamide,2011-08-17,male,243,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,37.52323333333333,Bolaji Olamide,nephew,Pharmacist,280000
+244,Motunrayo Olamide,2009-02-28,female,244,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.70935555555555,Kikelomo Olamide,aunt,Cleaner,25000
+245,Chuks Adebola,2010-09-22,male,245,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.4808111111111,Omotayo Adebola,father,Social Media Manager,120000
+246,Aderonke Onyekachukwu,2011-12-04,female,246,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.00118888888889,Oluwatosin Onyekachukwu,mother,Security Guard,30000
+247,Adejoke Ayotunde,2011-04-02,female,247,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,39.15817777777777,Dayo Ayotunde,nephew,Pharmacist,280000
+248,Bukky Kehinde,2010-12-02,female,248,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,36.49811111111111,Ifeoluwa Kehinde,niece,Digital Marketer,180000
+249,Omobola Bamidele,2009-08-13,female,249,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.148488888888885,Tunde Bamidele,nephew,Plumber,50000
+250,Modinat Ige,2010-11-03,female,250,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,36.73777777777777,Chizoba Ige,niece,Real Estate Agent,250000
+251,Ireti Ige,2009-03-13,female,251,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,37.2347,Jide Ige,father,Accountant,250000
+252,Adebisi Ayomide,2010-09-17,female,252,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.7036,Tiwatope Ayomide,aunt,Barber,40000
+253,Anuoluwapo Bamidele,2009-02-11,female,253,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.68722222222222,Chisom Bamidele,uncle,Barber,40000
+254,Oluwadamilola Ekenedilichukwu,2009-05-10,female,254,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.94547777777778,Omowunmi Ekenedilichukwu,aunt,Social Media Manager,120000
+255,Olufunmi Abimbola,2009-02-11,female,255,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,44.985011111111106,Olusegun Abimbola,uncle,Doctor,500000
+256,Oluwafunke Tochukwu,2009-11-26,female,256,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.057566666666666,Gbemisola Tochukwu,aunt,Plumber,50000
+257,Yusuf Tochukwu,2010-08-01,male,257,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.84202222222222,Tomiwa Tochukwu,father,Makeup Artist,80000
+258,Obioma Folami,2011-06-19,male,258,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,44.38614444444445,Temidayo Folami,niece,Pilot,600000
+259,Aderinsola Abimbola,2009-07-07,female,259,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.50143333333333,Chibuike Abimbola,uncle,Digital Marketer,180000
+260,Tolani Abioye,2010-12-19,female,260,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.992533333333334,Ayomide Abioye,mother,Photographer,100000
+261,Motunrayo Chidiebere,2010-08-02,female,261,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.00951111111112,Kabiru Chidiebere,father,Plumber,50000
+262,Chidera Abioye,2011-09-20,male,262,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.334111111111106,Morounkeji Abioye,niece,Barber,40000
+263,Yakubu Eniola,2010-09-01,male,263,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.016677777777776,Seun Eniola,nephew,Housekeeper,25000
+264,Anayo Kelechi,2011-10-14,male,264,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,38.00218888888889,Yemisi Kelechi,mother,Software Engineer,350000
+265,Umar Chinonso,2011-07-15,male,265,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.116344444444444,Kola Chinonso,nephew,Driver,50000
+266,Oluwadara Chinwendu,2010-10-11,female,266,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.82464444444444,Yetunde Chinwendu,niece,Digital Marketer,180000
+267,Olatunde Ekene,2010-10-18,male,267,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.003277777777775,Usman Ekene,nephew,Graphic Designer,150000
+268,Abubakar Olusola,2009-03-07,male,268,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.26666666666667,Omolola Olusola,aunt,Cleaner,25000
+269,Olaniyi Onyeka,2009-08-15,male,269,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,41.23452222222222,Ismail Onyeka,father,Lawyer,400000
+270,Oluwole Ayomide,2010-08-21,male,270,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,32.9908,Bilkisu Ayomide,niece,Tailor,40000
+271,Moradeun Fumnanya,2009-03-17,female,271,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,31.504566666666665,Omogbolahan Fumnanya,uncle,Barber,40000
+272,Ganiu Adetokunbo,2010-11-28,male,272,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.911844444444444,Morayo Adetokunbo,niece,Photographer,100000
+273,Motolani Ekene,2010-03-08,female,273,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.97978888888889,Salim Ekene,father,Farmer,50000
+274,Adenike Olamide,2011-12-06,female,274,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.42284444444444,Folakemi Olamide,mother,Event Planner,120000
+275,Ogbonna Taiwo,2009-06-12,male,275,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.24675555555555,Adebayo Taiwo,father,Taxi Driver,60000
+276,Yakubu Adeola,2010-11-05,male,276,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.18085555555555,Ireti Adeola,aunt,Journalist,150000
+277,Oluwadamilola Olamide,2009-03-05,female,277,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,40.40193333333334,Olaoluwa Olamide,father,Business Analyst,320000
+278,Folashade Obi,2011-07-01,female,278,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,36.358622222222216,Titilayo Obi,mother,University Lecturer,250000
+279,Ekene Abioye,2010-08-14,male,279,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,34.936011111111114,Gideon Abioye,father,Human Resources Manager,250000
+280,Moses Fumnanya,2011-01-24,male,280,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.547377777777776,Moyinoluwa Fumnanya,mother,Photographer,100000
+281,Adejoke Temitope,2011-08-22,female,281,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.67076666666666,Oluwatosin Temitope,nephew,Police Officer,100000
+282,Adebisi Kehinde,2009-12-23,male,282,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,33.29864444444444,Seyi Kehinde,aunt,Photographer,100000
+283,Adefunke Temitope,2009-05-09,female,283,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.43247777777778,Fola Temitope,uncle,Fashion Designer,120000
+284,Olufolake Adedayo,2011-02-20,female,284,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,42.770044444444444,Ifeoma Adedayo,aunt,Entrepreneur,500000
+285,Ajoke Onyekachukwu,2010-02-13,female,285,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.096633333333333,Ibikunle Onyekachukwu,uncle,Security Guard,30000
+286,Adekunle Fumnanya,2009-04-27,male,286,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,33.257155555555556,Aduke Fumnanya,mother,Imam,120000
+287,Kunle Ekene,2009-06-16,male,287,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,40.317366666666665,Idowu Ekene,uncle,Civil Engineer,300000
+288,Tunde Adebowale,2009-12-02,male,288,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,38.98341111111111,Adunola Adebowale,mother,Pharmacist,280000
+289,Bashir Chimezie,2010-03-05,male,289,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.21564444444444,Emmanuel Chimezie,uncle,Imam,120000
+290,Oluwateniola Uzoma,2009-09-16,female,290,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,30.818266666666663,Onome Uzoma,niece,Housekeeper,25000
+291,Motunde Eniola,2011-06-12,female,291,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,34.166666666666664,Funso Eniola,father,Baker,80000
+292,Akintunde Oluwatoyin,2009-06-24,male,292,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,38.13973333333333,Chinwe Oluwatoyin,niece,Human Resources Manager,250000
+293,Temidayo Adebola,2010-02-11,female,293,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,43.9506,Ayotunde Adebola,father,Entrepreneur,500000
+294,Oluwadamilola Olusola,2010-03-20,male,294,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,35.21077777777777,Abiodun Olusola,mother,Nurse,200000
+295,Oluwafikayo Oluwaseyi,2010-03-04,female,295,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,42.140277777777776,Lanre Oluwaseyi,father,Data Scientist,400000
+296,Morounkeji Chidi,2010-01-20,female,296,"[""22"",""21"",""10"",""3"",""6"",""2"",""4"",""13"",""1"",""5""]",art,46.78673333333333,Ronke Chidi,niece,Pilot,600000
+297,Raphael Abiodun,2010-07-07,male,297,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.563066666666668,Ayinde Abiodun,nephew,Baker,80000
+298,Ibukun Chiemeka,2010-01-14,male,298,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,32.57581111111111,Oyinlola Chiemeka,aunt,Electrician,70000
+299,Hakeem Adeola,2011-12-24,male,299,"[""23"",""8"",""11"",""24"",""5"",""4"",""13"",""2"",""1"",""6""]",science,31.024255555555552,Gbenga Adeola,uncle,Farmer,50000
