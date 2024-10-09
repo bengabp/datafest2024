@@ -9,3 +9,5 @@ This repository contains code and assets for datafest 2024, datafusion team
 ```bash
 python3 -m src.scripts.generate_data
 ```
+
+The 2 included notebooks contains code for data cleaning for training machine learning model

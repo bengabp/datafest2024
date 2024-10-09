@@ -214,10 +214,6 @@ class DataManager:
         df.to_csv("datasets/assessments.csv", index=None)
         supabase.table("assessments").insert(records).execute()
 
-    def generate_students_attendance_data(self):
-        pass
-
-
 if __name__ == "__main__":
     manager = DataManager()
     manager.generate_students_accessment_data()
