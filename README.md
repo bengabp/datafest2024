@@ -18,3 +18,6 @@ Our data was generated completely using a custom written algorithm.
 First we generate the students, subjects, teachers and parents while maintaining a good model to model relationship.
 Then we generate time_allocation data for each subject, in each class and for each term. Based on the time allocation and the income_level of their parents, we generate assessment data for different types of assessments including
 exam, test and home_work. Based on that data we are able to determine specific trends and visualize that
+
+## Visualization data
+The /visualization directory contains files generated during visualization
